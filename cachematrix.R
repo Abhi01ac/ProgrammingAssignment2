@@ -1,8 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
 ## This function creates  a special object that genarates a matrix and cache's its inverse.
+## Input is integer vector and nrows & ncol args for Matrix function
 makeCacheMatrix <- function(x = integer(), nrow = 2, ncol = 2) {
      m <- NULL
      set <- function(y) {
@@ -24,7 +24,7 @@ makeCacheMatrix <- function(x = integer(), nrow = 2, ncol = 2) {
  }
 
 
-## Write a short comment describing this function
+## This funcion checks if inverse of matrix is in cache and if not then calculates based on makeCacheMatrix function
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
